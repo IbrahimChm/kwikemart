@@ -1,67 +1,39 @@
-Ecommerce en Consola – Resumen de Documentación
-1. Descripción General
+# Mini Ecommerce en Consola
 
-Este programa implementa una aplicación de consola en Python que simula las funciones básicas de un ecommerce: visualizar un catálogo de productos, realizar búsquedas, agregar artículos a un carrito y calcular el total a pagar.
-El proyecto está desarrollado exclusivamente con contenidos del Módulo 3.
+## Descripción
+Aplicación en Python que simula un ecommerce básico en consola. Permite ver un catálogo de productos, buscar ítems, agregar al carrito, revisar el total y vaciarlo. Desarrollado únicamente con contenidos del Módulo 3.
 
-2. Funcionalidades Principales
-• Catálogo de productos
+---
 
-Definido como una lista de diccionarios, cada uno con:
-id, nombre, categoria y precio.
+## Funcionalidades Principales
+- Catálogo definido como lista de diccionarios.
+- Búsqueda por nombre o categoría.
+- Carrito implementado como lista con productos y cantidades.
+- Cálculo de subtotal y total.
+- Menú interactivo mediante ciclo `while`.
 
-• Menú principal
+---
 
-Disponible al iniciar el programa, con opciones para:
+## Funciones
+- **mostrar_menu()**: despliega el menú principal.  
+- **listar_productos(catalogo)**: muestra todos los productos.  
+- **buscar_productos(catalogo)**: filtra coincidencias.  
+- **agregar_al_carrito(catalogo, carrito)**: valida id/cantidad y agrega.  
+- **mostrar_carrito_y_total(carrito)**: muestra ítems y total.  
+- **vaciar_carrito(carrito)**: limpia el carrito.
 
-Ver catálogo
+---
 
-Buscar productos
+## Contenido de Python Utilizado
+- Tipos básicos (`int`, `str`, `float`)  
+- Estructuras (`list`, `dict`)  
+- Condicionales (`if`, `elif`, `else`)  
+- Ciclos (`while`, `for`)  
+- Funciones con parámetros y retornos  
 
-Agregar al carrito
+---
 
-Ver carrito y total
-
-Vaciar carrito
-
-Salir
-
-El menú se repite mediante un ciclo while.
-
-• Carrito de compras
-
-Estructura basada en una lista donde se almacenan productos y cantidades.
-
-3. Funciones Principales
-
-mostrar_menu(): despliega el menú.
-
-listar_productos(catalogo): muestra los productos disponibles.
-
-buscar_productos(catalogo): permite buscar por nombre o categoría.
-
-agregar_al_carrito(catalogo, carrito): valida y agrega productos.
-
-mostrar_carrito_y_total(carrito): muestra ítems, subtotales y total.
-
-vaciar_carrito(carrito): limpia el carrito.
-
-4. Contenidos de Python Utilizados
-
-Tipos básicos (int, float, str, bool)
-
-Estructuras de datos (list, dict)
-
-Condicionales (if, elif, else)
-
-Ciclos (while y for)
-
-Funciones con parámetros y valores retornados
-
-Estilo en snake_case e indentación adecuada
-
-5. Ejecución
-
-Ejecutar en consola:
-
+## Ejecución
+```bash
 python ecommerce_m3.py
+
